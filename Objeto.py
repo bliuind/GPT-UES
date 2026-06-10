@@ -7,9 +7,6 @@ import csv
 import math
 import builtins
 
-from sympy import CC
-
-
 BookShelf = ctypes.CDLL('./ObjetoANN_lib.so')
 BookShelf.eval.argtypes = (ctypes.c_char_p, ctypes.c_double,)
 BookShelf.eval.restype  = ctypes.c_double
